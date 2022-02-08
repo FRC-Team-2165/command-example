@@ -8,6 +8,7 @@ DriveSubsystem::DriveSubsystem() : DriveSubsystem(true) {}
 
 DriveSubsystem::DriveSubsystem(bool square) {
   squaring = square;
+  right.SetInverted(true);
 }
 
 void DriveSubsystem::drive(double speed, double rotation){
